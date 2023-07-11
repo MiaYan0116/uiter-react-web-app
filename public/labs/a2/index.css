@@ -117,3 +117,113 @@ p#id-selector-2{
 .rounded-corners-inline{
     border-radius: 30px 0px 20px 50px;
 }
+
+/* 3.1.5 Styling dimensions */
+.dimension-portrait{
+    width: 75px;
+    height: 100px
+}
+.dimension-landscape{
+    width: 100px;
+    height: 75px;
+}
+.dimension-square {
+    width: 75px;
+    height: 75px;
+ }
+ 
+ /* 3.1.6 Styling positions */
+ /* 3.1.6.1 Styling relative position */
+ .pos-relative-nudge-up-right {
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+ }
+ .pos-relative-nudge-down-right {
+    position: relative;
+    top: 20px;
+    left: 20px;
+ }
+ .pos-relative {
+    position: relative;
+ }
+ 
+/* 3.1.6.2 Styling absolute position (2pts) */
+.pos-absolute-10-10 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+ }
+ .pos-absolute-50-50 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+ }
+ .pos-absolute-120-20 {
+    position: absolute;
+    top: 20px;
+    left: 120px;      
+ }
+
+ /* 3.1.6.3 Styling fixed position */
+ .pos-fixed {
+    position: fixed;
+    right: 0px;
+    bottom: 50%;
+}
+
+/* 3.1.6.4 Styling z-index (1pt) */
+.zindex-bring-to-front {
+    z-index: 10;
+ }
+ 
+ /* 3.1.6.5 Floating Content */
+ .float-left {
+    float: left;
+ }
+ 
+ .float-right {
+    float: right;
+    height: 100px;
+ }
+ 
+ .float-done {
+    clear: both;
+ }
+
+ /* 3.1.6.6 Laying out content in a grid (4pts) */
+ .grid-row {
+    clear: both;
+ }
+ 
+ .grid-col-half-page {
+    width: 50%;
+    float: left;
+ }
+ .grid-col-third-page {
+    width: 33%;
+    float: left;
+ }
+ 
+ .grid-col-two-thirds-page {
+    width: 67%;
+    float: left;
+ }
+ 
+ .grid-col-left-sidebar {
+    width: 20%;
+    float: left;
+ }
+ 
+ .grid-col-main-content {
+    width: 60%;
+    float: left;
+ }
+ 
+ .grid-col-right-sidebar {
+    width: 20%;
+    float: left;
+ }
+ 
+ 
+ 
