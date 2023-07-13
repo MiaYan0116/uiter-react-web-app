@@ -1,0 +1,134 @@
+.wb-tuit-grid-container {
+    display: grid;
+    grid-template-columns: auto min-content minmax(min-content, 1fr) min-content;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    padding: 40px;
+  }
+  
+  .wb-tuit-sidebar-nav {
+    grid-column: 1;
+    grid-row: span 4;
+  }
+  .wb-tuit-sidebar-nav li{
+    padding: 10px;
+  }
+  
+  
+  .wb-tuit-go-back-arrow {
+    grid-column: 2;
+  }
+  
+  .wb-tuit-go-back-text {
+    grid-column: 3;
+    justify-self: center;
+    font-size: x-large;
+    font-weight: 700;
+  }
+  .wb-tuit-nav-more{
+    grid-column: 4;
+  }
+  .wb-tuit-tuits{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    border-style: solid;
+    border-color:cornsilk;
+    border-width: 1px;
+    padding-bottom: 10px;
+    padding: 12px;
+  }
+  .wb-tuit-avatar-img {
+    display: inline-block;
+    grid-column: 1;
+    grid-row: span 3;
+    justify-self: end;
+  }
+  .wb-tuit-avatar-img img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+  }
+  .wb-tuit-writer {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .wb-tuit-more{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+  }
+  .wb-tuit-content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .wb-tuit-card {
+    grid-column: 2;
+    grid-row: 3;
+    border-style: solid;
+    border-width: 1px;
+    border-color:darkgray;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-top: 0;
+    
+  }
+  .wb-tuit-card .media{
+    padding: 0;
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    object-fit: cover;
+  }
+  .wb-tuit-card .source,
+  .wb-tuit-card .content-text-2{
+    padding-left: 15px;
+    padding-right: 10px;
+    color: gray;
+    font-size: large;
+  }
+  .wb-tuit-card .title{
+    padding-left: 15px;
+    padding-right: 10px;
+    font-size: larger;
+  }
+  .wb-tuit-card .content-text-2{
+    padding-bottom: 10px;
+  }
+
+  .wb-comment-bar{
+    grid-column: 2;
+    grid-row: 4;
+    display: grid;
+    gap: 5px;
+    color: gray;
+  }
+  .wb-comment-bar .comment-icon{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .wb-comment-bar .retweet-icon{
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .wb-comment-bar.second-tuit .heart-icon{
+    grid-column: 3;
+    grid-row: 1;
+    color: red;
+  }
+  .wb-comment-bar .bars-icon{
+    grid-column: 4;
+    grid-row: 1;
+  }
+  .wb-comment-bar .share-icon{
+    grid-column: 5;
+    grid-row: 1;
+  }
+
+  
+  
