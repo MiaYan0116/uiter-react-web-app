@@ -5,7 +5,6 @@
     column-gap: 10px;
     padding: 40px;
   }
-  
   .wb-tuit-sidebar-nav {
     grid-column: 1;
     grid-row: span 4;
@@ -13,12 +12,9 @@
   .wb-tuit-sidebar-nav li{
     padding: 10px;
   }
-  
-  
   .wb-tuit-go-back-arrow {
     grid-column: 2;
   }
-  
   .wb-tuit-go-back-text {
     grid-column: 3;
     justify-self: center;
