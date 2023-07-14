@@ -43,7 +43,8 @@
 }
 .wb-icon-gear{
     padding: 10px;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
 }
 .wb-search-tabs {
     width: 100%;
@@ -72,7 +73,8 @@
     text-decoration-skip-ink: none;
 }
 .wb-head-img-box{
-    width: 100%;
+    padding-left: 20px;
+    width: 98%;
     display: flex;
     justify-content: center;
     align-items: center;               
@@ -83,6 +85,8 @@
 .wb-head-img-box .wb-head-img img {
     width: 100%;
     height: auto;
+    justify-content: start;
+    object-fit: cover;
 }
 .wb-head-img-box .wb-head-img-text{
     position: absolute;
@@ -116,3 +120,83 @@
     margin-top: -20px;
     margin-right: 10px;
 }
+
+/* Codes below are for index.html */
+.wb-b-page-container{
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.wb-b-this-page{
+    background-color: rgb(22, 116, 239);
+}
+.wb-b-this-page-text{
+    color: white;
+}
+.wb-b-link-text{
+    padding-left: 5px;
+}
+.wb-b-nav-icon{
+    padding-left: 10px;
+}
+.wb-b-search-icon{
+    padding-left: 10px;
+    padding-right: 8px;
+    margin-top: 6px;
+}
+.wb-b-gear-icon{
+    padding-left: 25px;
+    font-size: 1.6em;
+    color: rgb(6, 103, 230);
+}
+.wb-b-search-round-corner{
+    border: solid;
+    border-radius: 50px;
+    border-width: 1px;
+    overflow: hidden;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 2em;
+}
+.wb-b-nav-for-you{
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+.wb-b-nav-text{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wb-b-avatar{
+    width: 70%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+}
+
+.wb-b-tuit-container{
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    padding-bottom: 0.5em;
+    
+}
+.wb-b-tuit-channel-number,
+.wb-b-tuit-time-stamp{
+    color: gray;
+    font-size: medium;
+}
+.wb-b-last-tuit{
+    margin-bottom: 2em;
+}
+@media (max-width: 992px) {
+    #tab-entertainment {
+      display: none !important;
+    }
+}
+
+
+
+

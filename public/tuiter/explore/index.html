@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="../../venders/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../../venders/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="wb-b-page-container">
+        <div class="row">
+            <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1 col-1">
+                <nav class="navbar navbar-light">
+                    <ul class="navbar-nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link border" href="#">
+                          <i class="wb-b-nav-icon fab fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../home.html">
+                            <i class="wb-b-nav-icon fas fa-home mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">Home</span>
+                        </a>
+                      </li>
+                      <li class="nav-item wb-b-this-page">
+                        <a class="nav-link border" href="./index.html">
+                            <i class="wb-b-nav-icon fas fa-hashtag mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline wb-b-this-page-text">Explore</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../notifications.html">
+                            <i class="wb-b-nav-icon fas fa-bell mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">Notifications</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../messages.html">
+                            <i class="wb-b-nav-icon fas fa-envelope mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">Messages</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../bookmarks/bookmarks-css.html">
+                            <i class="wb-b-nav-icon fas fa-bookmark mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">Bookmarks</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../lists.html">
+                            <i class="wb-b-nav-icon fas fa-list mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">Lists</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../profile.html">
+                            <i class="wb-b-nav-icon fas fa-user mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">Profile</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link border" href="../more.html">
+                            <i class="wb-b-nav-icon fas fa-ellipsis-h mr-2"></i>
+                            <span class="wb-b-link-text d-none d-xl-inline">More</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <button class="btn btn-primary rounded-pill btn-sm" style="width: 100%; margin-top: 0.5em;">Tweet</button>
+                      </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            <div class="col-xxl-7 col-xl-6 col-lg-7 col-md-9 col-sm-10 col-10">
+                <div class="row">
+                  <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                      <div class="container d-flex align-items-center">
+                        <div class="flex-grow-1">
+                          <div class="input-group wb-b-search-round-corner">
+                            <span class="rounded-left wb-b-search-icon"><i class="fas fa-search"></i></span>
+                            <input class="form-control border-0 wb-b-input-text" type="search" placeholder="Search Twitter" aria-label="Search">
+                          </div>
+                        </div>
+                        <div>
+                          <div class="input-group-append">
+                            <span class="rounded-right wb-b-gear-icon"><i class="fas fa-cog"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                  
+                    <div class="col-md-12">
+                        <nav class="navbar navbar-expand-lg navbar-light ">
+                            <div id="navbarNav" style="margin-left: 1.4em;">
+                                <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                  <a class="nav-link active" id="tab-for-you" data-toggle="tab" href="#">For you</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="tab-trending" data-toggle="tab" href="#">Trending</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="tab-news" data-toggle="tab" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" id="tab-sports" data-toggle="tab" href="#">Sports</a>
+                                </li>
+                                <li class="nav-item d-none d-sm-block">
+                                  <a class="nav-link" id="tab-entertainment" data-toggle="tab" href="#">Entertainment</a>
+                                </li>
+                              </ul>
+                              <div class="tab-content">
+                                <div class="tab-pane fade show active" id="for-you"></div>
+                                <div class="tab-pane fade" id="trending"></div>
+                                <div class="tab-pane fade" id="news"></div>
+                                <div class="tab-pane fade" id="sports"></div>
+                                <div class="tab-pane fade" id="entertainment"></div>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="wb-head-img-box">
+                            <div class="wb-head-img">
+                                <img src="../../images/birthday.jpg" alt="birthday of SpongeBob">
+                                <div class="wb-head-img-text">Happy Birthday to SpongeBob!!</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- the first tuit -->
+                    <div class="col-md-12 wb-b-all-tuits-box">
+                        <div class="wb-b-tuit-container border">
+                            <div class="row">
+                              <div class="col-md-10">
+                                <ul class="list-group">
+                                  <li class="list-group-item border-0">
+                                    <div class="wb-b-tuit-channel-number">Krabby Patty</div>
+                                    <div class="wb-b-tuit-organization">
+                                      Bikini Bottom
+                                      <i class="fas fa-check-circle"></i>
+                                      <span class="wb-b-tuit-time-stamp"> - 2h</span>
+                                    </div>
+                                    <div class="wb-b-tuit-title">
+                                      Craving a delicious treat? Look no further than the legendary Crabby Patty! Bursting with flavor and served with a side of nostalgia, it's the ultimate indulgence.
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="col-md-2 d-flex justify-content-end">
+                                <img class="wb-b-avatar img-fluid" src="../../images/CrabbyPatty.jpg" alt="">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- The second tuit -->
+                    <div class="col-md-12">
+                      <div class="wb-b-tuit-container border">
+                          <div class="row">
+                            <div class="col-md-10">
+                              <ul class="list-group">
+                                <li class="list-group-item border-0">
+                                  <div class="wb-b-tuit-channel-number">Bob's Birthday</div>
+                                  <div class="wb-b-tuit-organization">
+                                    SpongeBob
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="wb-b-tuit-time-stamp"> - 2h</span>
+                                  </div>
+                                  <div class="wb-b-tuit-title">
+                                    Happy Birthday to myself! So proud of having soooo many friends!
+                                  </div>
+                                  <div class="wb-b-tuit-channel-number">
+                                    123k Tweets
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-md-2 d-flex justify-content-end">
+                              <img class="wb-b-avatar img-fluid" src="../../images/bob-avatar.jpg" alt="">
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- The third tuit -->
+                  <div class="col-md-12">
+                    <div class="wb-b-tuit-container border">
+                        <div class="row">
+                          <div class="col-md-10">
+                            <ul class="list-group">
+                              <li class="list-group-item border-0">
+                                <div class="wb-b-tuit-channel-number">Bob's Birthday</div>
+                                <div class="wb-b-tuit-organization">
+                                  Star Patrick
+                                </div>
+                                <div class="wb-b-tuit-title">
+                                  Happy Birthday to myself! So proud of having soooo many friends!
+                                </div>
+                                <div class="wb-b-tuit-channel-number">
+                                  123k Tweets
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-md-2 d-flex justify-content-end">
+                            <img class="wb-b-avatar img-fluid" src="../../images/Patrick-avatar.jpg" alt="">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the last tuit -->
+                <div class="col-md-12">
+                  <div class="wb-b-tuit-container border wb-b-last-tuit">
+                      <div class="row">
+                        <div class="col-md-10">
+                          <ul class="list-group">
+                            <li class="list-group-item border-0">
+                              <div class="wb-b-tuit-channel-number">Krabby Patty</div>
+                              <div class="wb-b-tuit-organization">
+                                Krab
+                                <i class="fas fa-check-circle"></i>
+                                <span class="wb-b-tuit-time-stamp"> - 2h</span>
+                              </div>
+                              <div class="wb-b-tuit-channel-number">
+                                123k Tweets
+                              </div>
+
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 d-flex justify-content-end">
+                          <img class="wb-b-avatar img-fluid" src="../../images/karb-avayar.jpg" alt="">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+                </div>
+            </div>
+            <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-1 col-sm-1 col-1 d-none d-lg-block">
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="list-group">
+                    <li class="list-group-item wb-b-follow-title" style="font-weight: 700;">Who to follow</li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="../../images/Elmo.jpg" alt="" class=".wb-b-follow-avatar img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="wb-b-tuit-organization" style="font-weight: 700;">
+                            Elmo
+                            <i class="fas fa-check-circle"></i>
+                          </div>
+                          <span>@Elmo.SesameStreet</span>
+                        </div>
+                        <div class="col-md-3">
+                          <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- the second follow recommendation -->
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="../../images/Grover.jpg" alt="" class=".wb-b-follow-avatar img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="wb-b-tuit-organization" style="font-weight: 700;">
+                            Grover
+                            <i class="fas fa-check-circle"></i>
+                          </div>
+                          <span>@Grover.SesameStreet</span>
+                        </div>
+                        <div class="col-md-3">
+                          <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- the third follow recommendation -->
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="../../images/BigBird.jpg" alt="" class=".wb-b-follow-avatar img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="wb-b-tuit-organization" style="font-weight: 700;">
+                            Big Bird
+                            <i class="fas fa-check-circle"></i>
+                          </div>
+                          <span>@BigBird.SesameStreet</span>
+                        </div>
+                        <div class="col-md-3">
+                          <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- the fourth follow recommendation -->
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="../../images/Kermit.jpg" alt="" class=".wb-b-follow-avatar img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="wb-b-tuit-organization" style="font-weight: 700;">
+                            Kermit the Frog
+                            <i class="fas fa-check-circle"></i>
+                          </div>
+                          <span>@Kermit.SesameStreet</span>
+                        </div>
+                        <div class="col-md-3">
+                          <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- the fifth follow recommendation -->
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-md-2">
+                          <img src="../../images/Rosita.webp" alt="" class=".wb-b-follow-avatar img-fluid rounded-circle">
+                        </div>
+                        <div class="col-md-7">
+                          <div class="wb-b-tuit-organization" style="font-weight: 700;">
+                            Rosita
+                            <i class="fas fa-check-circle"></i>
+                          </div>
+                          <span>@Rosita.SesameStreet</span>
+                        </div>
+                        <div class="col-md-3">
+                          <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
