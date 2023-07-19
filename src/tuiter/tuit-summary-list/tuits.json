@@ -1,0 +1,26 @@
+[
+  { 
+    "_id": 123, 
+    "topic": "Weekend", 
+    "userName": "Elmo",
+    "title": "Feeling absolutely elated! Just had the most fantastic weekend getaway. 😄🌟",
+    "time": "2h",   
+    "image": "Elmo.jpg" 
+  },
+  { 
+    "_id": 234, 
+    "topic": "Weekend",   
+    "userName": "BigBird",
+    "title": "Hey there, fellow birdies! 🐦 Flying high with excitement as I recount my amazing weekend adventure. 🌄✨",
+    "time": "2h",   
+    "image": "BigBird.jpg" 
+  },
+  { 
+    "_id": 345, 
+    "topic": "FurryFun",  
+    "userName": "Rosita",
+    "title": "Oh, hello, dear friends! 🐾 Just had the most pawsome playdate ever!",
+    "time": "4d",   
+    "image": "Rosita.webp" 
+  }
+]

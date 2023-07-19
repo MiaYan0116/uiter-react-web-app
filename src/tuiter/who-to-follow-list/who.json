@@ -1,0 +1,21 @@
+[
+    {
+      "_id": 123,
+      "userName": "Elmo",
+      "handle": "Sesame Street",
+      "avatarIcon": "Elmo.jpg"
+    },
+    {
+      "_id": 234,
+      "userName": "BigBird",
+      "handle": "Sesame Street",
+      "avatarIcon": "BigBird.jpg"
+    },
+    {
+      "_id": 345,
+      "userName": "Grover",
+      "handle": "Sesame Street",
+      "avatarIcon": "Grover.jpg"
+    }
+   ]
+   
