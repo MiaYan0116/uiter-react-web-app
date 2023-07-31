@@ -26,36 +26,36 @@ const NavigationSiderbar = () => {
     return(
         <div className="list-group">
             <Link to={ "/tuiter/home" } className={`list-group-item ${active === "home" ? "active" : ""}`}> 
-              <span style={{ paddingRight: "0.6em" }}><FaHome size={20} /></span> 
-							<span className="d-none d-xxl-inline"> Home </span>
+              <span style={{ paddingRight: "0.6em"}}><FaHome size={20} /></span> 
+							<span className="d-none d-xl-inline"> Home </span>
 						</Link>
             <Link to={ "/tuiter/explore" } className={`list-group-item ${active === "explore" ? "active" : ""}`}>
-							<span style={{ paddingRight: "0.5em" }}><FaSearch size={20} /></span> 
-							<span className="d-none d-xxl-inline">Explore</span>
+							<span style={{ paddingRight: "0.5em"}}><FaSearch size={20} /></span> 
+							<span className="d-none d-xl-inline">Explore</span>
 						</Link>
             <Link to={ "/tuiter/notifications" } className={`list-group-item ${active === "notifications" ? "active" : ""}`}>
 							<span style={{ paddingRight: "0.6em" }}><FaBell size={20} /></span> 
-							<span className="d-none d-xxl-inline">Notifications</span>
+							<span className="d-none d-xl-inline">Notifications</span>
 						</Link>
             <Link to={ "/tuiter/messages" } className={`list-group-item ${active === "messages" ? "active" : ""}`}>
 							<span style={{ paddingRight: "0.6em" }}><FaEnvelope size={20} /></span> 
-							<span className="d-none d-xxl-inline">Messages</span>
+							<span className="d-none d-xl-inline">Messages</span>
 						</Link>
             <Link to={ "/tuiter/bookmarks" } className={`list-group-item ${active === "bookmarks" ? "active" : ""}`}>
 							<span style={{ paddingRight: "0.6em" }}><FaBookmark size={20} /></span> 
-							<span className="d-none d-xxl-inline">Bookmarks</span>
+							<span className="d-none d-xl-inline">Bookmarks</span>
 						</Link>
             <Link to={ "/tuiter/lists" } className={`list-group-item ${active === "lists" ? "active" : ""}`}>
 							<span style={{ paddingRight: "0.6em" }}><FaList size={20} /></span> 
-							<span className="d-none d-xxl-inline">Lists</span>
+							<span className="d-none d-xl-inline">Lists</span>
 						</Link>
             <Link to={ "/tuiter/profile" } className={`list-group-item ${active === "profile" ? "active" : ""}`}>
 							<span style={{ paddingRight: "0.6em" }}><FaUser size={20} /></span> 
-							<span className="d-none d-xxl-inline">Profile</span>
+							<span className="d-none d-xl-inline">Profile</span>
 						</Link>
             <Link to={ "/tuiter/more" } className={`list-group-item ${active === "more" ? "active" : ""} `}>
 							<span style={{ paddingRight: "0.6em" }}><FaEllipsisH size={20} /></span> 
-							<span className="d-none d-xxl-inline">More</span>
+							<span className="d-none d-xl-inline">More</span>
 						</Link>
         </div>
     );
