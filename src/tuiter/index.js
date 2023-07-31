@@ -17,31 +17,31 @@ const store = configureStore(
 
 // 2.1.5 Creating a Tuiter placeholder component
 function Tuiter(){
-    return(
-        <Provider store = {store}>
-            <div>
-                {/* <Link to="/labs/a3">A3</Link> |
-                <Link to="/hello">Hello</Link> |
-                <Link to="/tuiter">Tuiter</Link> */}
-                <Nav/>
-                <div className="row">
-                    <div className="col-2">
-                        <NavigationSiderbar/>
-                    </div>
-                    <div className="col-7">
-                        <Routes>
-                            <Route path="/home" element={<HomeScreen />} />
-                            <Route path="/explore" element={<ExploreScreen />} />
-                            <Route path="/bookmarks" element={<BookmarksScreen/>} />
-                            <Route path="/profile" element={<ProfileScreen/>} />
-                        </Routes>
-                    </div>
-                    <div className="col-3">
-                        <WhoToFollowList/>
-                    </div>
-                </div>
-            </div>
-        </Provider>
+  return(
+    <Provider store = {store}>
+      <div>
+        {/* <Link to="/labs/a3">A3</Link> |
+        <Link to="/hello">Hello</Link> |
+        <Link to="/tuiter">Tuiter</Link> */}
+        <Nav/>
+        <div className="row">
+          <div className="col-2 col-xl-2">
+            <NavigationSiderbar/>
+          </div>
+          <div className="col-10 col-xl-7">
+            <Routes>
+              <Route path="/home" element={<HomeScreen />} />
+              <Route path="/explore" element={<ExploreScreen />} />
+              <Route path="/bookmarks" element={<BookmarksScreen/>} />
+              <Route path="/profile" element={<ProfileScreen/>} />
+            </Routes>
+          </div>
+          <div className="col-3 d-none d-xl-inline">
+            <WhoToFollowList/>
+          </div>
+      </div>
+    </div>
+  </Provider>
         
     );
 };
