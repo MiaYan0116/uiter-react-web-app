@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { FaHome } from 'react-icons/fa';
 import { FaSearch } from 'react-icons/fa';
 import { FaBell } from 'react-icons/fa';
@@ -10,9 +11,10 @@ import { FaUser } from 'react-icons/fa';
 import { FaEllipsisH } from 'react-icons/fa';
 
 const NavigationSiderbar = () => {
+    const { currentUser } = useSelector((state) => state.user);
     const { pathname } = useLocation();
     const[ignore, tuiter, active] = pathname.split('/');
-    const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
+    // const links = ["home", "explore", "notifications", "messages", "bookmarks", "lists", "profile",  "more"];
     // return (
     //     <div className="list-group">
     //         {links.map((link) => 
@@ -22,7 +24,6 @@ const NavigationSiderbar = () => {
     //         )}
     //     </div>
     // );
-
     return(
         <div className="list-group">
             <Link to={ "/tuiter/home" } className={`list-group-item ${active === "home" ? "active" : ""}`}> 
@@ -57,6 +58,11 @@ const NavigationSiderbar = () => {
 							<span style={{ paddingRight: "0.6em" }}><FaEllipsisH size={20} /></span> 
 							<span className="d-none d-xl-inline">More</span>
 						</Link>
+            {!currentUser && <Link className="list-group" to="/tuiter/login">   
+              Login   
+            </Link>}
+            {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
+            { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
         </div>
     );
 };

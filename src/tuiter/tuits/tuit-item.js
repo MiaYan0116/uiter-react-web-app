@@ -6,31 +6,17 @@ import { FaRetweet } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaShare } from "react-icons/fa";
-import { deleteTuit } from "../reducers/tuit-reducer"
+// import { deleteTuit } from "../reducers/tuit-reducer"
+import {deleteTuitThunk} from "../services/tuits-thunks";
 import { useDispatch } from "react-redux";
 import { FaTimes } from 'react-icons/fa';
+import TuitStats from './tuit-stats';
 
-const TuitItem = (
-	{
-		tuit = {
-			"_id": 123, 
-			"topic": "Weekend-reducer", 
-			"userName": "Elmo",
-			"title": "Feeling absolutely elated! Just had the most fantastic weekend getaway. 😄🌟",
-			"time": "2h",   
-			"image": "Elmo.jpg",
-			"liked": true,
-			"replys": 123,
-			"retuits": 432,
-			"likes": 12345,
-			"handle": "@SesameStreet",
-			"tuitContent": "It's time to relax, unwind, and enjoy some well-deserved fun! 😄 Whether you're spending time with loved ones, exploring the great outdoors, or simply taking a moment to yourself, make the most of this weekend! 🌈💕 Sending lots of positive vibes and happiness your way! 🤗💖"
-		}
-	}   
-) => {
+const TuitItem = ({tuit}) => {
 	const dispatch = useDispatch();
 	const deleteTuitHandler = (id) => {
-		dispatch(deleteTuit(id));
+		// dispatch(deleteTuit(id));
+		dispatch(deleteTuitThunk(id));
 	}
 	return(
 		<li className="list-group-item border" style={{paddingLeft: '1em'}}>
@@ -46,25 +32,7 @@ const TuitItem = (
 						{tuit.handle} . {tuit.time}
 					</div>
           <div>{tuit.tuitContent}</div>
-					<div className="row"  style={{marginTop: '1em'}}>
-						<span className="col-3">
-							<FaRegComment /> {tuit.replys} 
-						</span>
-						<span className="col-3">
-							<FaRetweet /> {tuit.retuits} 
-						</span>
-						<span className="col-3">
-							{tuit.liked ? (
-								<FaHeart style={{ color: 'red' }}/>
-								) : (
-								<FaRegHeart />
-								)}
-							{tuit.likes}
-						</span>
-						<span className="col-3">
-							<FaShare /> 
-						</span>
-					</div>
+					<TuitStats tuit = {tuit}/>
 				</div>
       </div>
     </li>
