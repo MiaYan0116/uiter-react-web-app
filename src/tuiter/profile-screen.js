@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { profileThunk, logoutThunk, updateUserThunk } from "./services/auth-thunks";
-import { BsConeStriped } from "react-icons/bs";
+
 
 function ProfileScreen() {
   const { currentUser } = useSelector((state) => state.user);
@@ -31,7 +31,8 @@ function ProfileScreen() {
        <div>
         <label>First Name</label>
         <input type="text" 
-          value={profile.firstName}
+          value={profile.username}
+          // value={profile.firstName}
           onChange={(event) => {
           const newProfile = {
            ...profile, firstName: event.target.value,
@@ -41,8 +42,10 @@ function ProfileScreen() {
        </div>
        <div>
         <label>Last Name</label>
-        <input type="text" value={profile.lastName}
-         onChange={(event) => {
+        <input type="text" 
+          // value={profile.lastName}
+          value={profile.password}
+          onChange={(event) => {
           const newProfile = {
            ...profile, lastName: event.target.value,
           };
