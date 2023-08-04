@@ -6,7 +6,7 @@ import { profileThunk, logoutThunk, updateUserThunk } from "./services/auth-thun
 
 function ProfileScreen() {
   const { currentUser } = useSelector((state) => state.user);
-  const [profile, setProfile] = useState({});
+  const [profile, setProfile] = useState({currentUser});
   // console.log(profile);
 
  const dispatch = useDispatch();
@@ -29,25 +29,25 @@ function ProfileScreen() {
      <h1>Profile Screen</h1>
      {profile && (<div>
        <div>
-        <label>First Name</label>
+        <label>User Name</label>
         <input type="text" 
           value={profile.username}
           // value={profile.firstName}
           onChange={(event) => {
           const newProfile = {
-           ...profile, firstName: event.target.value,
+           ...profile, username: event.target.value,
           };
           setProfile(newProfile);
          }}/>
        </div>
        <div>
-        <label>Last Name</label>
+        <label>Password</label>
         <input type="text" 
           // value={profile.lastName}
           value={profile.password}
           onChange={(event) => {
           const newProfile = {
-           ...profile, lastName: event.target.value,
+           ...profile, password: event.target.value,
           };
           setProfile(newProfile);
          }}/>

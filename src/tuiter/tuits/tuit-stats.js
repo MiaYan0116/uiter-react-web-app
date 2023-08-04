@@ -6,10 +6,22 @@ import { FaRegHeart } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { FaShare } from "react-icons/fa";
 import { FaRegThumbsDown } from 'react-icons/fa';
+import { useState } from "react";
+
 
 
 const TuitStats = ({ tuit }) => {
 	const dispatch = useDispatch();
+	const[liked, setLiked] = useState(false);
+	const[disliked, setDisliked] = useState(0);
+	const handleLikeClick = () => {
+		setLiked(!liked);
+		dispatch(updateTuitThunk({...tuit, likes: liked? tuit.likes - 1: tuit.likes + 1}));
+	};
+	const handleDislikeClick = () => {
+		setDisliked(!disliked);
+		dispatch(updateTuitThunk({...tuit, dislikes: disliked? tuit.dislikes - 1: tuit.dislikes + 1}));
+	};
 	return (
 		<div className="row" style={{ marginTop: '1em' }}>
 			<span className="col-3">
@@ -20,21 +32,18 @@ const TuitStats = ({ tuit }) => {
 			</span>
 			<span className="col-2">
 				<FaHeart
-					className="text-danger"
-					onClick={() =>
-						dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1 }))
-					}
+					style={{color: liked ? "red" : ""}}
+					onClick={handleLikeClick}
 				/>
-				<span className="ms-2">{tuit.likes}</span>
+				<span className="ms-2">{liked ? tuit.likes + 1: tuit.likes}</span>
 			</span>
 			{/* dislike icon */}
 			<span className="col-2">
 				<FaRegThumbsDown
-					onClick={() =>
-						dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1 }))
-					}
+					style={{color: disliked ? "red" : ""}}
+					onClick={handleDislikeClick}
 				/>
-				<span className="ms-2">{tuit.dislikes}</span>
+				<span className="ms-2">{disliked ? tuit.dislikes + 1: tuit.dislikes}</span>
 			</span>
 			<span className="col-3">
 				<FaShare />
