@@ -29,10 +29,9 @@ function ProfileScreen() {
      <h1>Profile Screen</h1>
      {profile && (<div>
        <div>
-        <label>User Name</label>
+        <label>First Name</label>
         <input type="text" 
-          value={profile.username}
-          // value={profile.firstName}
+          value={profile.firstName}
           onChange={(event) => {
           const newProfile = {
            ...profile, username: event.target.value,
@@ -41,10 +40,9 @@ function ProfileScreen() {
          }}/>
        </div>
        <div>
-        <label>Password</label>
+        <label>Last Name</label>
         <input type="text" 
-          // value={profile.lastName}
-          value={profile.password}
+          value={profile.lastName}
           onChange={(event) => {
           const newProfile = {
            ...profile, password: event.target.value,
