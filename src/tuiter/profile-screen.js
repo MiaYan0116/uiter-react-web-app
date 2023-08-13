@@ -59,7 +59,7 @@ function ProfileScreen() {
         navigate("/tuiter/login");
       }}>Logout</button>
      <button onClick={() =>{
-        console.log("save clicked!")
+        console.log("save clicked!!")
         save()
      }}>Save</button>
     </div> );
